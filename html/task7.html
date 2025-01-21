@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Form - Task 7</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method="GET">
+            <div>
+                <label for="name">Enter Your Name: </label>
+                <input type="text" name="name" id="name" required placeholder="Enter Name">
+            </div>
+            <br />
+
+            <div>
+                <label for="tel">Contact Number: </label>
+                <!-- <small>Format: 999-999-9999</small> -->
+                <input type="tel" name="phone" id="phone" required placeholder="Contact Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+            </div>
+
+            <div>
+                <label for="story">Your Feedback</label>
+                <textarea id="story" name="story" rows="5" cols="33">Enter Your Feedback</textarea>
+            </div>
+
+        </form>
+    </body>
+</html>
