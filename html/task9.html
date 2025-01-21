@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Signup form</title>
+    </head>
+    <body>
+        <form action="" method="GET">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Full Name" required>
+            </div>
+
+            <div>
+                <label for="tel">Enter Number</label>
+                <input type="number" name="phone" id="phone" placeholder="999-999-9999" pattern="[0-9]{3}[0-9]{3}[0-9][4]">
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input
+                type="password"
+                name="password"
+                id="password"
+                minlength="8"
+                maxlength="30"
+                placeholder="Enter Your Password"
+                pattern="(?=.*[a-z])(?=.*[A-z])(?=.\d)(?=.*[@#$!%])[A-Za-z\@#$!%]{8,}"
+                title="Password must b atleast 8 characters atleast 1 uppercase 1 lowercase 1 speciale case 1 digit"
+                required
+                >
+            </div>
+            <button type="submit">Signup</button>
+        </form>
+    </body>
+</html>
