@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, intial-scale=1.0">
+       <title>FlexBox</title>
+       <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #333;
+            color: #fff;
+        }
+        div{
+            border: 2px solid white;
+        }
+
+        .parrent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            gap: 10px;
+        }
+
+        .child{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #red{
+            background-color: red;
+        }
+
+        #yellow{
+            background-color: yellow;
+        }
+
+        #blue{
+            background-color: blue;
+        }
+
+        #orange{
+            background-color: orange;
+        }
+
+        #brown{
+            background-color: brown;
+        }
+
+       </style>
+    </head>
+    <body>
+        <div class="parrent">
+            <div id="red" class="child">box 1</div>
+            <div id="yellow" class="child">box 2</div>
+            <div id="blue" class="child">box 3</div>
+            <div id="orange" class="child">box 4</div>
+            <div id="brown" class="child">box 5</div>
+        </div>
+    </body>
+</html>
