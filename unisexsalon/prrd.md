@@ -50,7 +50,7 @@
 
 - Theme : Dark theme 
 - Font-Family: Roboto sans-serif 
-- font colorrr : #fff
+- font color : #fff
 - secondary color : blue 
 
 ## Timeline 

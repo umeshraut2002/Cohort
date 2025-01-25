@@ -58,18 +58,27 @@ body {
 }
 
 .hero-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
 }
 
 .hero-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 .hero-description {
+  text-align: center;
+  overflow-wrap: break-word;
 }
 
 .cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(60, 60, 223);
 }
 
 .cta-button:hover {
