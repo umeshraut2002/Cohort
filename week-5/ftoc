@@ -1,0 +1,20 @@
+// F to c
+
+function convertTemp(value, scale){
+    switch(scale){
+        case 'F':
+            return ((value - 32) * 5)/9;
+            break;
+
+        case 'C':
+            return (value * 9)/5 + 32;
+            break;
+
+        default:
+            return "Invalid Scale";
+            break;
+    }
+}
+
+console.log(convertTemp(77, 'F'));
+console.log(convertTemp(25, 'C'));
