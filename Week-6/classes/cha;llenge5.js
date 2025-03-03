@@ -1,3 +1,4 @@
+// mini bank system which is perform operation like deposit , withdraw and transfer 
 function BankAccount(acountNunber, holderName, balance){
     this.acountNunber = acountNunber; 
     this.holderName = holderName;
@@ -9,11 +10,20 @@ BankAccount.prototype.deposit = function(amount){
     return this.balance += amount;
 }
 
+BankAccount.prototype.withdraw = function(amount){
+    console.log(`withdraw: ${amount} Balance: ${this.balance}`);
+    return this.balance -= amount;
+}
+
 const account1 = new BankAccount(123, 'John', 1000);
 const account2 = new BankAccount(124, 'Jane', 2000);
 
 console.log(account1.balance);
 
 account1.deposit(5000);
+
+console.log(account1.balance);
+
+account1.withdraw(2000);
 
 console.log(account1.balance);
