@@ -43,3 +43,4 @@ console.log(account1.transfer(1000, account2));
 
 console.log(account1.balance);
 console.log(account2.balance);
+conaole
