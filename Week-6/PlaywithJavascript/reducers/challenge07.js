@@ -14,4 +14,15 @@ const tweets = [
 ];
 
 
+let hashTagCount = tweets.reduce((acc, tweet) => {
+    const tags = tweet.match(/#\w+/g) || [];
+
+    tags.forEach(tags => {
+        acc[tags] = (acc[tags] || 0) + 1;
+    })
+    return acc;
+},{});
+
+console.log(hashTagCount);
+
 // { "#JavaScript": 3, "#React": 2 }
