@@ -13,4 +13,13 @@ let orderList = [
   { id: 104, status: "Shipped" }
 ];
 
+let orderDelivered = orderList.reduce((acc, order) => {
+  if(order.status === "Delivered"){
+    acc.push(order.id)
+  }
+  return acc;
+}, [])
+
+console.log(orderDelivered)
+
 // output: [102, 103]

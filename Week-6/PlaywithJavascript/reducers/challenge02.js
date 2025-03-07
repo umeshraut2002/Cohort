@@ -11,4 +11,10 @@ let products = [
   { name: "Keyboard", price: 2000, inStock: true }
 ];
 
+let totalPrice = products.reduce((acc, product) => {
+  return product.inStock ? acc + product.price : acc;
+},0);
+
+console.log(totalPrice);
+
 // output: 52000

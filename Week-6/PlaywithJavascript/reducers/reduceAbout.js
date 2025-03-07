@@ -1,0 +1,1 @@
+Array.reduce(callbackfunction. value) => 

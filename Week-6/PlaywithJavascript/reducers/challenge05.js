@@ -11,6 +11,19 @@ let employeeList = [
   { name: "Sara", salary: 52000 }
 ];
 
+
+let salaryMorethanFifty = employeeList.reduce((acc, employee) => {
+  if(employee.salary > 50000){
+    acc.name.push(employee.name);
+    acc.totalsalery += employee.salary;
+  }
+
+  return acc;
+
+}, {name: [], totalsalery: 0})
+
+console.log(salaryMorethanFifty)
+
 /*
 output: 
 {

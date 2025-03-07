@@ -11,9 +11,15 @@ let users = [
   { name: "Pooja", active: false }
 ];
 
-let activeUsers = users.reduce((acc, active) => (acc === active.active));
 
-console.log(activeUsers);
+let activeUser = users.reduce((acc, curr) => {
+  if(curr.active){
+    acc.push(curr.name);
+  }
+  return acc;
+}, [])
+
+console.log(activeUser);
 
 
 // output: ["Amit", "Sana"]

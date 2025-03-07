@@ -11,4 +11,10 @@ let movieList = [
   { title: "Movie D", rating: 4.2 }
 ];
 
+let sumRatings = movieList.reduce((acc, ratings) => {
+  return ratings.rating >= 4 ? acc + ratings.rating : acc;
+},0)
+
+console.log(sumRatings)
+
 // output: 13.7
