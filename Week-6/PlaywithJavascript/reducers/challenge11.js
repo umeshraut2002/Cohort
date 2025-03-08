@@ -1,6 +1,5 @@
 /*
 6️⃣ LinkedIn - User Endorsement Count for Skills
-
 📝 Problem:
 LinkedIn par ek user ke skills ka total endorsement count nikalna hai.
 */
@@ -17,5 +16,4 @@ const totalEndorsement = skills.reduce((acc, curr) => (acc + curr.endorsements),
 
 console.log("Total Endorsements: ",totalEndorsement);
 
-// output // Total Endorsements: 33
-
+// output // Total Endorsements: 3
