@@ -13,5 +13,7 @@ const users = [
   { id: 3, name: "Rahul", username: "rahul_king" }
 ];
 
+
+
 // output: 
 // ["amit_01", "neha_rocks", "rahul_king"]
