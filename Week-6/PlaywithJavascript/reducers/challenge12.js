@@ -14,6 +14,13 @@ const watchHistory = [
   { genre: "Comedy", hours: 4 }
 ];
 
+const totalWatchHours = watchHistory.reduce((acc, curr) => {
+  acc[curr.genre] = (acc[curr.genre] || 0) + curr.hours;
+  return acc;
+}, {});
+
+console.log(totalWatchHours);
+
 /*
 output: { "Action": 7, "Drama": 3, "Comedy": 4 }
 */
