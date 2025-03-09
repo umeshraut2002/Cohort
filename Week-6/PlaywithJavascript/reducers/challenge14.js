@@ -13,5 +13,11 @@ const sales = [
   { category: "Electronics", revenue: 30000 }
 ];
 
+const totalRevenue = sales.reduce((acc, curr) => {
+  acc[curr.category] = (acc[curr.category] || 0) + curr.revenue;
+  return acc;
+}, {})
+
+console.log(totalRevenue);
 
 // output: { "Electronics": 80000, "Fashion": 20000 }
