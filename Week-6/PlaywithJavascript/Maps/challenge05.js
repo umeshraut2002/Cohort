@@ -12,6 +12,13 @@ const movies = [
   { title: "Fast & Furious", rating: 4.2 }
 ];
 
+const titleInUppercase = movies.map((users) => ({
+  ...users,
+  title: users.title.toUpperCase()
+}))
+
+console.log(titleInUppercase);
+
 // output:
 // [
 //   { title: "INCEPTION", rating: 4.8 },
