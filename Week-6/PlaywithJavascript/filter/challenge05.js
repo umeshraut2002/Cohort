@@ -13,4 +13,8 @@ const movies = [
   { title: "Fast & Furious", rating: 4.2 }
 ];
 
+const ratingsMore = movies.filter(item => item.rating > 4.5);
+
+console.log(ratingsMore);
+
 // output: [{ title: "Inception", rating: 4.8 }, { title: "Interstellar", rating: 4.6 }]
