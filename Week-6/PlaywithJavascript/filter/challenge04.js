@@ -13,5 +13,8 @@ const menu = [
   { dish: "Dal Tadka", isVeg: true }
 ];
 
+const vegetarianDishes = menu.filter(item => item.isVeg === true);
+
+console.log(vegetarianDishes);
 
 // output:[{ dish: "Paneer Tikka", isVeg: true }, { dish: "Dal Tadka", isVeg: true }]
