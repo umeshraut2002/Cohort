@@ -13,6 +13,12 @@ const products = [
   { name: "Keyboard", price: 2000 }
 ];
 
+const usdToInr = products.map(item => ({
+  ...item,  // all properties as it is 
+  price: item.price * 0.012 // operation perform 
+}));
+
+console.log(usdToInr);
 
 // output: 
 // [
