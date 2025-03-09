@@ -13,7 +13,11 @@ const users = [
   { id: 3, name: "Rahul", username: "rahul_king" }
 ];
 
+const onlyUsername = users.map(item => {
+  return item.username;
+});
 
+console.log(onlyUsername);
 
 // output: 
 // ["amit_01", "neha_rocks", "rahul_king"]
