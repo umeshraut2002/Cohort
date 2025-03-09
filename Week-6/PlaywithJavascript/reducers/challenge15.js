@@ -14,5 +14,12 @@ const files = [
   { type: "Documents", size: 2 }
 ];
 
+const totalStorageUsage = files.reduce((acc, curr) => {
+  acc[curr.type] = (acc[curr.size] || 0) + curr.size;
+  return acc;
+}, {});
+
+console.log(totalStorageUsage,"(Total GB)");
+
 // output:
 // { "Images": 8, "Videos": 15, "Documents": 2 }  (Total GB)
