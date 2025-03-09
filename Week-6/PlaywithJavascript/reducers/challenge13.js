@@ -13,5 +13,11 @@ const orders = [
   { restaurant: "Dominos", amount: 300 }
 ];
 
+const totalBill = orders.reduce((acc, curr) => {
+  acc[curr.restaurant] = (acc[curr.restaurant] || 0) + curr.amount;
+  return acc;
+}, {})
+
+console.log(totalBill);
 
 // output: { "Dominos": 800, "KFC": 700 }
