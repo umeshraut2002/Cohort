@@ -13,4 +13,8 @@ const users = [
   { name: "Rahul", active: true }
 ];
 
+const getActiveUser = users.filter((item) => item.active === true);
+
+console.log(getActiveUser)
+
 // output: [{ name: "Amit", active: true }, { name: "Rahul", active: true }]
