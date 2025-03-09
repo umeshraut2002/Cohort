@@ -12,4 +12,8 @@ const tweets = [
   { text: "Follow me for more updates", likes: 120 }
 ];
 
+const popularTweets = tweets.filter(item => item.likes > 100);
+
+console.log(popularTweets);
+
 // output:[{ text: "JavaScript is awesome!", likes: 150 }, { text: "Follow me for more updates", likes: 120 }]
