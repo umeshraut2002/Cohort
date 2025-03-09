@@ -12,8 +12,15 @@ const menu = [
   { dish: "Dal Tadka", price: 200 }
 ];
 
-// output:
+const deliveryCharge = menu.map((user) => ({
+  ...user,
+  price: user.price + 50
+}))
 
+console.log(deliveryCharge);
+
+
+// output:
 // [
 //   { dish: "Paneer Tikka", price: 300 },
 //   { dish: "Chicken Biryani", price: 400 },
