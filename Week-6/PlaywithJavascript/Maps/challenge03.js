@@ -13,6 +13,12 @@ const tweets = [
   "Follow me for updates."
 ];
 
+const tweetObj = tweets.map((obj) => ({
+  text: obj,
+  length: obj.length
+}))
+console.log(tweetObj);
+
 // output: 
 // [
 //   { text: "Hello Twitter!", length: 14 },
