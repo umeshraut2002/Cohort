@@ -13,4 +13,8 @@ const products = [
   { name: "Mouse", price: 1500, inStock: true }
 ];
 
+const inStockProduct = products.filter(item => item.inStock === true);
+
+console.log(inStockProduct);
+
 // output: [{ name: "Laptop", price: 60000, inStock: true }, { name: "Mouse", price: 1500, inStock: true }]
