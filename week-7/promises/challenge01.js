@@ -4,17 +4,17 @@
 👉 Task: Ek function createPromise(flag) likh, jo agar flag === true ho toh "Success" return kare, warna "Error" return kare using .then/.catch.
 */
 
-const promise = new Promise((resolve, reject) => {
-  let flag = true;
+function createFlag(flag){
+    return new Promise((resoleve, reject) => {
+        if(flag){
+            resoleve("Sucess : Flag is true");
+        } else{
+            reject("Promise Rejected : Flag is false");
+        }
+    })
+}
 
-  if (flag) {
-    resolve("Sucess");
-  } else {
-    reject("Something went wrong");
-  }
-});
-
-promise
+createFlag(true)
   .then((result) => {
     console.log("Promise Resolve and result: ", result);
   })
@@ -25,4 +25,4 @@ promise
     console.log("All Done");
   });
 
-console.log(promise);
+console.log(createFlag(true));
