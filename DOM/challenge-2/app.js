@@ -11,6 +11,7 @@ colorButton.addEventListener("click", (event) => {
     switch(clickButton.id){
         case "redButton":
             heading.style.color = "red";
+            document.querySelector("body").style.backgroundColor = "#FF6666";
             break;
         case "greenButton":
             heading.style.color = "green";
@@ -22,7 +23,7 @@ colorButton.addEventListener("click", (event) => {
             heading.style.color = "purple";    
             break;
         case "resetButton":
-            heading.style.color = "white";
+            heading.style.color = "black";
             break;
         default:
             alert("Unknown Button Click");
