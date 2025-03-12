@@ -22,6 +22,6 @@ button.addEventListener("click", () => {
         button.innerText = "Turn On";
         statusText.innerText = "Status: Off";
         body.style.backgroundColor = "white";
-        body.style.color = "black";
+        body.style.color = "black"
     }
 })
