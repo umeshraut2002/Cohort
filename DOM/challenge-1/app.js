@@ -2,6 +2,10 @@
  * Write your challenge solution here
  */
 
-const bulb_container = document.getElementsByClassName(".bulb-container");
-const bulb = document.getElementsById("bulb");
-const bulb_base = 
+const togleBtn = document.getElementById("toggleButton");
+// let bulb = document.getElementByClassName("bulb off");
+
+togleBtn.addEventListener("click", () => {
+    let bulb = document.getElementByClassName("bulb off");
+    bulb.style.backgroundColor = "yellow";
+})
