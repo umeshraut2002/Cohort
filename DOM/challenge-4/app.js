@@ -2,19 +2,29 @@
  * Write your challenge solution here
  */
 
+// task input add 
+// total task = 1
+// after check box completed task = 1
+// delete task then task input = 0 again 
 
-const taskInput = document.getElementById("taskInput");
+const inputTask = document.getElementById("taskInput");
 const addButton = document.getElementById("addButton");
-
-// add task into task list 
 const taskList = document.getElementById("taskList");
+const totalTask = document.getElementById("totalTask");
+const completedTask = document.getElementById("completedTask");
 
-// total task 
-const totalTasks = document.getElementById("totalTask");
+addButton.addEventListener("click", ()=> {
+    let taskValue = inputTask.value;
 
-// complted tasks
-const completedTasks = document.getElementById("completeedTasks");
+    if(taskValue !== ""){
+        let newList = document.createElement("li");
+         newList.innerText = taskValue;
+         taskList.appendChild(newList);
+         taskValue.value = " ";
+    }
+    else{
+        alert("NHai ab kuch soch!");
+    }
 
-addButton.addEventListener("click", () =>{
-    
+    // alert("abe ueh chal rha hai kya ");
 })
