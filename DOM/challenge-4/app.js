@@ -7,24 +7,12 @@
 // after check box completed task = 1
 // delete task then task input = 0 again 
 
-const inputTask = document.getElementById("taskInput");
 const addButton = document.getElementById("addButton");
+const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList");
-const totalTask = document.getElementById("totalTask");
-const completedTask = document.getElementById("completedTask");
 
-addButton.addEventListener("click", ()=> {
-    let taskValue = inputTask.value;
+addButton.addEventListener("click", () => {
+    let inputValue = taskInput.value;
 
-    if(taskValue !== ""){
-        let newList = document.createElement("li");
-         newList.innerText = taskValue;
-         taskList.appendChild(newList);
-         taskValue.value = " ";
-    }
-    else{
-        alert("NHai ab kuch soch!");
-    }
-
-    // alert("abe ueh chal rha hai kya ");
+    alert("ho rha hai na");
 })
