@@ -38,7 +38,6 @@
 3️⃣4️⃣ Show a loading spinner while fetching dummy data from an API.
 3️⃣5️⃣ Create an expanding search bar animation.
 🟠 Intermediate to Advanced (Drag & Drop, Advanced Forms, API Handling)
-
 3️⃣6️⃣ Create a drag-and-drop list reordering system.
 3️⃣7️⃣ Build a character limit warning for a text input field.
 3️⃣8️⃣ Create a custom range slider with live value display.
