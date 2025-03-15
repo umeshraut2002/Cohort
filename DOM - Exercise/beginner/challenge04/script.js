@@ -4,9 +4,9 @@ const count = document.getElementById("count");
 let c = 0;
 
 increment.addEventListener("click", () => {
-    count.innerText = c++;
+    count.innerText = ++c;
 });
 
 decrement.addEventListener("click", ()=>{
-    count.innerText = c--;
+    count.innerText = --c;
 });
