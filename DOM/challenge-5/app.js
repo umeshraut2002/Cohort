@@ -20,3 +20,13 @@ const images = [
     caption: 'Urban City Skyline',
   },
 ];
+
+const carousel = document.getElementById("carousel");
+const carouselTrack = document.getElementById("carouselTrack");
+const captionOnImg = document.getElementById("caption");
+const prevButton = document.getElementById("prevButton");
+const nextButton = document.getElementById("nextButton");
+const carouselNav = document.getElementById("carouselNav");
+const autoPlayButton = document.getElementById("autoPlayButton");
+const timerDisplay = document.getElementById("timerDisplay");
+
