@@ -3,6 +3,11 @@ const taskInput = document.getElementById("taskInput");
 const addButton = document.getElementById("addButton");
 const taskList = document.getElementById("taskList");
 const totalTasks = document.getElementById("totalTasks");
+const completedTask = document.getElementById("completedTasks");
+
+
+let count = 0;
+let completedCount = 0;
 
 addButton.addEventListener("click", (e) => {
 
@@ -13,16 +18,31 @@ addButton.addEventListener("click", (e) => {
       li.innerText = taskText;
       taskList.appendChild(li);
       taskInput.value = "";
-      totalTask();
+      count++;
+      updateTotalTask();
+      deleteButton(li);
   }
 })
 
-function totalTask(){
-  let count = 0;
-  totalTasks.innerText = `Total Tasks: ${count++}`;
+function updateTotalTask(){
+  totalTasks.innerText = `Total Tasks: ${count}`;
 }
 
-function taskComleted(){
-
+function updateCompletedTasks(){
+  completedTask.innerText = `Completed Task: ${++completedCount}`;
 }
 
+
+function deleteButton(li){
+  const deleteBtn = document.createElement("button");
+  deleteBtn.className = "delete-button";
+  deleteBtn.innerText = "Delete";
+  li.appendChild(deleteBtn);
+
+  deleteBtn.addEventListener("click", () => {
+    li.remove();
+    count--;
+    updateCompletedTasks();
+    updateTotalTask();
+  })
+}
