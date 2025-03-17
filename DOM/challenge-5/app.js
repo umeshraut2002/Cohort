@@ -23,10 +23,26 @@ const images = [
 
 const carousel = document.getElementById("carousel");
 const carouselTrack = document.getElementById("carouselTrack");
-const captionOnImg = document.getElementById("caption");
+const caption = document.getElementById("caption");
 const prevButton = document.getElementById("prevButton");
 const nextButton = document.getElementById("nextButton");
 const carouselNav = document.getElementById("carouselNav");
 const autoPlayButton = document.getElementById("autoPlayButton");
 const timerDisplay = document.getElementById("timerDisplay");
 
+
+/*
+
+
+*/
+
+images.forEach((item) =>{
+  let img = document.createElement("img");
+  let p = document.createElement("p");
+
+  img.src = item.url;
+  caption.innerText = item.caption;
+
+  carouselTrack.appendChild(img);
+  carouselTrack.appendChild(p);
+});
