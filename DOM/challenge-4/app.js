@@ -4,12 +4,13 @@ const addButton = document.getElementById("addButton");
 const taskList = document.getElementById("taskList");
 const totalTasks = document.getElementById("totalTasks");
 const completedTask = document.getElementById("completedTasks");
+const emptyList = document.getElementsByClassName("empty-list");
 
 
 let count = 0;
 let completedCount = 0;
 
-addButton.addEventListener("click", (e) => {
+addButton.addEventListener("click", () => {
 
     let taskText = taskInput.value.trim();
 
@@ -22,7 +23,11 @@ addButton.addEventListener("click", (e) => {
       updateTotalTask();
       deleteButton(li);
   }
+  else{
+    alert("Enter a Task");
+  }
 })
+
 
 function updateTotalTask(){
   totalTasks.innerText = `Total Tasks: ${count}`;
