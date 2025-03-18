@@ -33,9 +33,10 @@ const timerDisplay = document.getElementById("timerDisplay");
 
 /*
 
-
 */
 
+
+function displayImages(index){
 images.forEach((item) =>{
   let img = document.createElement("img");
   let p = document.createElement("p");
@@ -45,4 +46,13 @@ images.forEach((item) =>{
 
   carouselTrack.appendChild(img);
   carouselTrack.appendChild(p);
+});
+}
+
+// next button 
+
+nextButton.addEventListener("click",() =>{
+  for(let i = 1; i < images.length; i++){
+    displayImages(i)   
+  }
 });
