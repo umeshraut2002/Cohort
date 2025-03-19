@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .btn-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      position: relative;
+    }
+    .tooltip {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      display: none;
+    }
+    button:hover .tooltip {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="btn-container">
+    <button>
+      Hover Me
+      <div class="tooltip">This is a tooltip!</div>
+    </button>
+  </div>
+</body>
+</html>
