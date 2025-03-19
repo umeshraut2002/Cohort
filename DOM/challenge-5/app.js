@@ -31,10 +31,6 @@ const autoPlayButton = document.getElementById("autoPlayButton");
 const timerDisplay = document.getElementById("timerDisplay");
 
 
-/*
-
-*/
-
 
 function displayImages(index){
 images.forEach((item) =>{
