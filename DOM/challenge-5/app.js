@@ -29,26 +29,68 @@ const nextButton = document.getElementById("nextButton");
 const carouselNav = document.getElementById("carouselNav");
 const autoPlayButton = document.getElementById("autoPlayButton");
 const timerDisplay = document.getElementById("timerDisplay");
+let curIndex = 0
+let intervalId;
 
-
+timerDisplay.innerText = '5s left';
 
 function displayImages(index){
-images.forEach((item) =>{
-  let img = document.createElement("img");
-  let p = document.createElement("p");
+    carouselTrack.innerHTML = "";
+    caption.innerText = "";
 
-  img.src = item.url;
-  caption.innerText = item.caption;
+    let img = document.createElement("img");
+    let p = document.createElement("p");
 
-  carouselTrack.appendChild(img);
-  carouselTrack.appendChild(p);
-});
+    img.src = images[index].url;
+    p.innerText = images[index].caption;
+
+    carouselTrack.appendChild(img);
+    caption.appendChild(p);
 }
 
 // next button 
 
+displayImages(curIndex);
+
 nextButton.addEventListener("click",() =>{
-  for(let i = 1; i < images.length; i++){
-    displayImages(i)   
+  curIndex++;
+  if(curIndex >= images.length){
+    curIndex = 0;
+  }else{
+  displayImages(curIndex);
   }
-});
+  });
+
+  prevButton.addEventListener("click", () => {
+    curIndex--;
+    if(curIndex < 0){
+      curIndex = images.length;
+    } else{
+      displayImages(curIndex);
+    }
+  })
+
+
+autoPlayButton.addEventListener("click", () => {
+  if(!intervalId){
+
+    let timer = parseInt(timerDisplay.innerText) ;
+
+    intervalId = setInterval(() =>{
+      
+      curIndex++;
+
+      if(curIndex >= images.length){
+        curIndex = 0;
+      }
+
+      displayImages(curIndex);
+
+    }, timer)
+  }
+})
+
+timerDisplay.innerText = `${timer} s left`;
+
+clearInterval(intervalId);
+intervalId = null;
