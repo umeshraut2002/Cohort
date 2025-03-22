@@ -1,0 +1,102 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Board Layout */
+.board {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Columns */
+.column {
+  background: #fff;
+  padding: 20px;
+  width: 32%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.column h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Task Cards */
+.task {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.task:hover {
+  transform: translateY(-5px);
+}
+
+.task h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.task p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Priority Labels */
+.priority {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.low {
+  background: #d4edda;
+  color: #155724;
+}
+
+.medium {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.high {
+  background: #f8d7da;
+  color: #721c24;
+}

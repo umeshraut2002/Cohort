@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Kanban Task Board</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Kanban Task Board</h1>
+    </header>
+
+    <div class="board">
+      <!-- To Do Column -->
+      <div class="column" id="todo">
+        <h2>📝 To Do</h2>
+        <div class="task">
+          <h3>Design Landing Page</h3>
+          <p>Wireframe and mockups for new project.</p>
+          <span class="priority low">Low</span>
+        </div>
+      </div>
+
+      <!-- In Progress Column -->
+      <div class="column" id="in-progress">
+        <h2>🚧 In Progress</h2>
+        <div class="task">
+          <h3>Develop API</h3>
+          <p>Build backend with Node.js and MongoDB.</p>
+          <span class="priority medium">Medium</span>
+        </div>
+      </div>
+
+      <!-- Done Column -->
+      <div class="column" id="done">
+        <h2>✅ Done</h2>
+        <div class="task">
+          <h3>Project Setup</h3>
+          <p>Initialize Git, install dependencies, and setup.</p>
+          <span class="priority high">High</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
