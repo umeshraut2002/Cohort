@@ -14,6 +14,9 @@ function mouseDown(e){
     startX = e.clientX;
     startY = e.clientY;
 
+    console.log(e.clientX);
+    console.log(e.clientY);
+
     document.addEventListener('mousemove', mouseMove);
     document.addEventListener('mouseup', mouseUp);
 }
@@ -21,6 +24,10 @@ function mouseDown(e){
 function mouseMove(e){
     newX = startX - e.clientX;
     newY = startY - e.clientY;
+
+    console.log(`${newX} ----------- ${newY}`);
+    console.log(`${startX} ##### ${startY}`);
+    console.log(`${e.clientX} &&&&&&& ${e.clientY}`);
 
     startX = e.clientX;
     startY = e.clientY;
@@ -35,3 +42,5 @@ function mouseUp(){
 
 
 dragBox.addEventListener('mousedown', mouseDown);
+
+console.log(dragBox);
