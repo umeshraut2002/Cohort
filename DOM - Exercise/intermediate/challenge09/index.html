@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      height: 100vh;
-      transition: background-color 0.5s ease;
-    }
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Stylish Modal Popup</title>
 </head>
 <body>
-  <button id="color-btn">Change Background Color</button>
+  <div class="container">
+    <button class="open-btn" id="openModal">Open Modal</button>
+
+    <!-- Modal Structure -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-box">
+        <button class="close-btn" id="closeModal">&times;</button>
+        <h2 class="modal-title">Welcome to Urvi's Popup! 🎉</h2>
+        <p class="modal-text">
+          This is a sleek and stylish modal with smooth animations, a glassy effect, and perfect responsiveness.
+        </p>
+        <button class="toggle-btn" id="toggleMode">🌗 Toggle Dark/Light</button>
+      </div>
+    </div>
+  </div>\
+  <script src="script.js"></script>
 </body>
 </html>
