@@ -15,8 +15,8 @@
 1️⃣3️⃣ Create a simple modal popup (open/close on button click).✅
 1️⃣4️⃣ Make a basic form validation (check if all fields are filled).✅
 1️⃣5️⃣ Detect if a user is pressing a specific keyboard key.✅
-1️⃣6️⃣ Prevent default behavior of a form submission.
-1️⃣7️⃣ Create a tooltip that appears when hovering over a button.
+1️⃣6️⃣ Prevent default behavior of a form submission. ✅
+1️⃣7️⃣ Create a tooltip that appears when hovering over a button.✅ 
 1️⃣8️⃣ Change an image's src on a button click.
 1️⃣9️⃣ Generate a random color and apply it to the background.✅
 2️⃣0️⃣ Filter a list of items based on search input.
